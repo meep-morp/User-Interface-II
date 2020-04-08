@@ -33,21 +33,23 @@ vertical-align: baseline;
         color: darkslateblue;
     }
     h3{
-        font-family: 'Short Stack', cursive;
-        font-size: 20px;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 25px;
         color: lavender;
     }
     nav a{
+        font-size: 20px;
         color:#ebcbfc;
         padding:5px;
         border: solid 4px lightpink;
         text-decoration: none;
-        font-family: 'Short Stack', cursive;
+        font-family: 'Advent Pro', sans-serif;
         background: mediumpurple
     }
     nav a:hover{
         color: slateblue;
         background: lightpink;
+        transition: 0.5s;
     }
 
 /*Navbar*/
@@ -117,8 +119,8 @@ footer{
     height: 100%;
 }    
 footer h4{
-    font-family: 'Short Stack', cursive;
-    font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     width: 13%;
