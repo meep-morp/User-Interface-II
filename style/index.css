@@ -21,17 +21,60 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*General Styles*/
-*{
-    border: 1px solid gray;
-}
+    *{
+        border: solid 1px gray;
+        background: pink;
+    }
 /*Navbar*/
-    
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+header h2{
+    font-size: 20px;
+}
 /*Hero Image*/
-
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15%;
+    margin: 4%;
+    background-image: ;
+    background: cornflowerblue;
+}
+.hero h1{
+    font-size: 35px;
+}
 /*Gallery*/
-
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+    margin: 2% 0;
+    background: teal;
+}
+.gallery div{
+    width: 30%;
+}
 /*Footer*/
-
+footer{
+    display: flex;
+    justify-content: center;
+    background: gray;
+    height: 100%;
+}    
+footer h4{
+    width: 13%;
+    margin: 0;
+    background: lavender;
+}
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
