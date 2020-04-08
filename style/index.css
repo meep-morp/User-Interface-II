@@ -20,6 +20,7 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
 /*General Styles*/
     /**{
         border: solid 1px gray;
@@ -48,8 +49,13 @@ vertical-align: baseline;
         color: slateblue;
         background: lightpink;
     }
+
 /*Navbar*/
 header{
+    z-index: 1;
+    position: sticky;
+    background: lavender;
+    top: 0;
     display: flex;
     justify-content: space-between;
     margin: 2%;
@@ -57,6 +63,7 @@ header{
 header h2{
     font-size: 20px;
 }
+
 /*Hero Image*/
 .hero{
     display: flex;
@@ -70,6 +77,7 @@ header h2{
 .hero h1{
     font-size: 45px;
 }
+
 /*Gallery*/
 .gallery{
     display: flex;
@@ -83,6 +91,7 @@ header h2{
     background: linear-gradient(90deg, rgba(153,146,224,1) 0%, rgba(87,104,210,1) 0%, rgba(255,157,240,1) 100%);
     background-size: cover;
 }
+
 .gallery div{
     width: 30%;
     margin: 1%;
@@ -92,25 +101,35 @@ img{
     height: 100%;
     background-color: #ebcbfc;
 }
+
 img:hover{
     opacity: .5;
     transition: 0.8s;
 }
+
 /*Footer*/
 footer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: radial-gradient(circle, rgba(185,87,210,1) 0%, rgba(153,146,224,1) 100%);
     padding: 5%;
     height: 100%;
 }    
 footer h4{
+    font-family: 'Short Stack', cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
     width: 13%;
     margin: 0;
 }
 footer nav{
     display: flex;
     justify-content: space-evenly;
+}
+footer nav a{
+    margin: 5%;
 }
 
 
