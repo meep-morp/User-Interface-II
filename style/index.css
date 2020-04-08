@@ -21,9 +21,9 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*General Styles*/
-    *{
-        /*border: solid 1px gray;*/
-    }
+    /**{
+        border: solid 1px gray;
+    }*/
     body{
         background:lavender;
     }
@@ -36,6 +36,18 @@ vertical-align: baseline;
         font-size: 20px;
         color: lavender;
     }
+    nav a{
+        color:#ebcbfc;
+        padding:5px;
+        border: solid 4px lightpink;
+        text-decoration: none;
+        font-family: 'Short Stack', cursive;
+        background: mediumpurple
+    }
+    nav a:hover{
+        color: slateblue;
+        background: lightpink;
+    }
 /*Navbar*/
 header{
     display: flex;
@@ -44,13 +56,6 @@ header{
 }
 header h2{
     font-size: 20px;
-}
-nav a{
-    text-decoration: none;
-    font-family: 'Short Stack', cursive;
-}
-nav a:hover{
-    color:slateblue;
 }
 /*Hero Image*/
 .hero{
@@ -69,7 +74,9 @@ nav a:hover{
 .gallery{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    text-align: center;
     padding: 5%;
     margin: 2% 0;
     background: rgb(153,146,224);
@@ -78,6 +85,16 @@ nav a:hover{
 }
 .gallery div{
     width: 30%;
+    margin: 1%;
+}
+img{
+    width: 75%;
+    height: 100%;
+    background-color: #ebcbfc;
+}
+img:hover{
+    opacity: .5;
+    transition: 0.8s;
 }
 /*Footer*/
 footer{
