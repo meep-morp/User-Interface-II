@@ -23,7 +23,15 @@ vertical-align: baseline;
 /*General Styles*/
     *{
         border: solid 1px gray;
-        background: pink;
+        background:#ca9ae4;
+    }
+    h1, h2{
+        font-family: 'Permanent Marker', cursive;
+        color: slateblue;
+    }
+    h3{
+        font-family: 'Short Stack', cursive;
+        font-size: 20px;
     }
 /*Navbar*/
 header{
@@ -34,6 +42,9 @@ header{
 header h2{
     font-size: 20px;
 }
+header h2 nav{
+    text-decoration: none;
+}
 /*Hero Image*/
 .hero{
     display: flex;
@@ -41,10 +52,10 @@ header h2{
     align-items: center;
     padding: 10%;
     margin: 4%;
-    background-image: url("images\hero.jpg");
+    background-image: url("images\hero_com.jpg");
 }
 .hero h1{
-    font-size: 35px;
+    font-size: 45px;
 }
 /*Gallery*/
 .gallery{
@@ -53,7 +64,7 @@ header h2{
     justify-content: space-around;
     padding: 5%;
     margin: 2% 0;
-    background: teal;
+    background: mediumpurple;
 }
 .gallery div{
     width: 30%;
@@ -62,14 +73,13 @@ header h2{
 footer{
     display: flex;
     justify-content: center;
-    background: gray;
+    background: #014c8f;
     padding: 5%;
     height: 100%;
 }    
 footer h4{
     width: 13%;
     margin: 0;
-    background: lavender;
 }
 footer nav{
     display: flex;
