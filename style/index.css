@@ -55,8 +55,9 @@ vertical-align: baseline;
 /*Navbar*/
 header{
     z-index: 1;
-    position: sticky;
+    width: 100vw;
     background: lavender;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
