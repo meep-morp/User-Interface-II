@@ -28,6 +28,9 @@ vertical-align: baseline;
         /*border: solid 1px gray;*/
         scroll-behavior: smooth;
     }
+    html{
+        font-size: 62.5%;
+    }
     body{
         background:lavender;
     }
@@ -37,11 +40,11 @@ vertical-align: baseline;
     }
     h3{
         font-family: 'Advent Pro', sans-serif;
-        font-size: 25px;
+        font-size: 2.5rem;
         color: lavender;
     }
     nav a{
-        font-size: 20px;
+        font-size: 2rem;
         color:#ebcbfc;
         padding:5px;
         border: solid 4px lightpink;
@@ -67,7 +70,7 @@ header{
     margin: 2%;
 }
 header h2{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 /*Hero Image*/
@@ -82,7 +85,7 @@ header h2{
     background-size: cover;
 }
 .hero h1{
-    font-size: 45px;
+    font-size: 4.5rem;
 }
 
 /*Gallery*/
@@ -128,7 +131,7 @@ footer{
 footer h4{
     font-family: 'Advent Pro', sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     width: 13%;
@@ -146,7 +149,7 @@ footer a{
     text-decoration: none;
     font-family: 'Advent Pro', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 footer a:hover{
     color:lavender;
@@ -174,6 +177,15 @@ footer a:hover{
     }
     .gallery div{
         width: 100%;
+    }
+}
+@media (max-width: 500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1{
+        text-align: center;
     }
 }
 
