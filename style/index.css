@@ -139,6 +139,18 @@ footer nav{
 footer nav a{
     margin: 5%;
 }
+@media (max-width: 800px){
+    .hero{
+        height: 100vh;
+        justify-content: center;
+    }
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery div{
+        width: 100%;
+    }
+}
 
 
 
