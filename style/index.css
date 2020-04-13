@@ -1,1 +1,190 @@
 /* Add CSS styling here */
+/*Reset*/
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+/*General Styles*/
+
+    *{
+        /*border: solid 1px gray;*/
+        scroll-behavior: smooth;
+    }
+    body{
+        background:lavender;
+    }
+    h1, h2{
+        font-family: 'Permanent Marker', cursive;
+        color: darkslateblue;
+    }
+    h3{
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 25px;
+        color: lavender;
+    }
+    nav a{
+        font-size: 20px;
+        color:#ebcbfc;
+        padding:5px;
+        border: solid 4px lightpink;
+        text-decoration: none;
+        font-family: 'Advent Pro', sans-serif;
+        background: mediumpurple
+    }
+    nav a:hover{
+        color: slateblue;
+        background: lightpink;
+        transition: 0.5s;
+    }
+
+/*Navbar*/
+
+header{
+    z-index: 1;
+    background: lavender;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+header h2{
+    font-size: 20px;
+}
+
+/*Hero Image*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    margin: 4%;
+    background-image: url("/images/hero_com.jpg");
+    background-size: cover;
+}
+.hero h1{
+    font-size: 45px;
+}
+
+/*Gallery*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5%;
+    margin: 2% 0;
+    background: rgb(153,146,224);
+    background: linear-gradient(90deg, rgba(153,146,224,1) 0%, rgba(87,104,210,1) 0%, rgba(255,157,240,1) 100%);
+    background-size: cover;
+}
+
+.gallery div{
+    width: 30%;
+    margin: 1%;
+}
+img{
+    width: 75%;
+    height: 100%;
+    background-color: #ebcbfc;
+}
+
+img:hover{
+    opacity: .5;
+    transition: 0.8s;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle, rgba(185,87,210,1) 0%, rgba(153,146,224,1) 100%);
+    padding: 5%;
+    height: 100%;
+}    
+footer h4{
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    width: 13%;
+    margin: 0;
+}
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer nav a{
+    margin: 5%;
+}
+footer a{
+    color: violet;
+    text-decoration: none;
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+footer a:hover{
+    color:lavender;
+    transition: 0.5s;
+}
+@media (max-width: 800px){
+    header nav a{
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: mediumpurple;
+        padding:0;
+        border: none;
+        background: lavender;
+    }
+    .hero{
+        height: 100vh;
+        justify-content: center;
+    }
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery div{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
